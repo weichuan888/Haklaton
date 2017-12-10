@@ -4,7 +4,7 @@
 	<title></title>
 
 	<style type="text/css">
-		
+
 #bordel{height :50px;
 
 width: 50px;
@@ -19,15 +19,18 @@ background-color: #ff0;
 <div id="bordel"></div>
 
 	<script type="text/javascript">
-	
-				
+	<script src="smoothscroll.js"></script>
+	    <!-- Merci à kryogenix.org pour le  scroll javascript -->
+
+
+
 
 var perso = document.getElementById('bordel');
 
 perso.addEventListener('click', function(){
 
 // faire tout dans le css
-	var pleinEcran = document.createElement('div');	
+	var pleinEcran = document.createElement('div');
 	pleinEcran.id= 'pleinEcran';
 	pleinEcran.style.zIndex = '5';
 	pleinEcran.style.height = '100%';

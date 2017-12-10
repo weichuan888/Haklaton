@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+#bordel{height :50px;
+
+width: 50px;
+
+background-color: #ff0;
+}
+
+	</style>
+</head>
+<body id = "corp">
+
+<div id="bordel"></div>
+
+	<script type="text/javascript">
+	
+				
+
+var perso = document.getElementById('bordel');
+
+perso.addEventListener('click', function(){
+
+// faire tout dans le css
+	var pleinEcran = document.createElement('div');	
+	pleinEcran.id= 'pleinEcran';
+	pleinEcran.style.zIndex = '5';
+	pleinEcran.style.height = '100%';
+	pleinEcran.style.width = '100%';
+	pleinEcran.style.backgoundColor = 'white';
+
+
+	var video = document.createElement('video');
+	video.style.height = '100%';
+	video.style.width = '100%';
+	video.autoplay= true;
+	video.controls = true;
+
+
+	var source = document.createElement('source');
+	source.src = "Bob_Marley_-_Don't_worry_be_Happy.mp4";
+	source.type = "video/mp4";
+
+	var body = document.getElementById('corp');
+	video.appendChild(source);
+	pleinEcran.appendChild(video);
+	body.appendChild(pleinEcran);
+
+});
+
+
+var point = document.createElement('a');
+point.style.zIndex = '5';
+var image = document.createElement('img');
+image.src= 'point.png';
+point.appendChild(image);
+
+
+// la placer à un point précis
+
+//point.positionX = 456;
+
+
+	var body = document.getElementById('corp');
+body.appendChild(point);
+
+
+
+	</script>
+</body>
+</html>

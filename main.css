@@ -114,6 +114,20 @@ img {
   margin-left: 450px;
 
 }
+/*video{
+
+	margin: 0px
+}
+section{
+
+position: absolute;
+z-index: 1;
+height: 100%;
+width: 100%;
+background-image: url('bx.jpg');
+background-repeat: no-repeat;
+}
+
 #image{
 	position: absolute;
 	z-index: 0;
@@ -122,5 +136,4 @@ img {
 	background-image: url('montenegro.png');
 	background-repeat: no-repeat;
 
-
-}
+}*/
